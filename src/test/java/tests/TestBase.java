@@ -10,10 +10,9 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         Configuration.browser = "chrome";
-        Configuration.browserVersion = "145.0";
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
-        //Configuration.holdBrowserOpen = true; -
+        //Configuration.holdBrowserOpen = true;
         //Используется, чтобы оставить браузер открытым, но проблема, что не завершается вебдрайвер. Для корректной работы стоит использовать что-то вроде sleep(600_000)
         //Configuration.pageLoadStrategy = "eager";
         //В продакшене не стоит использовать. Используется если есть проблемы с загрузкой страницы.
